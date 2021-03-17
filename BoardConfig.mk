@@ -19,6 +19,8 @@ DEVICE_PATH := device/xiaomi/ysl
 # Build
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -181,11 +183,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-08-05
 
-# SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-
-# Sepolicy
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Treble
 BOARD_VNDK_VERSION := current
