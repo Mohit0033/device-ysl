@@ -28,5 +28,4 @@ EXTRA_VENDOR_LIBRARIES := \
     libselinux \
     libstdc++ \
     libsonivox \
-    libunwind \
     libvibrator
