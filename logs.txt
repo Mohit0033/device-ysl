@@ -1,0 +1,254 @@
+07:11:18 ************************************************************
+07:11:18 You are building on a machine with 15.6GB of RAM
+07:11:18 
+07:11:18 The minimum required amount of free memory is around 16GB,
+07:11:18 and even with that, some configurations may not work.
+07:11:18 
+07:11:18 If you run into segfaults or other errors, try reducing your
+07:11:18 -j value.
+07:11:18 ************************************************************
+[1mbuild/make/core/soong_config.mk:193: [35mwarning: [0m[1mBOARD_PLAT_PUBLIC_SEPOLICY_DIR has been deprecated. Use SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS instead..[0m
+[1mbuild/make/core/soong_config.mk:194: [35mwarning: [0m[1mBOARD_PLAT_PRIVATE_SEPOLICY_DIR has been deprecated. Use SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS instead..[0m
+============================================
+PLATFORM_VERSION_CODENAME=S
+PLATFORM_VERSION=S
+TARGET_PRODUCT=aosp_ysl
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv8-a
+TARGET_2ND_CPU_VARIANT=cortex-a53
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-1046-azure-x86_64-Ubuntu-18.04.5-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=AOSP.MASTER
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=device/xiaomi/ysl
+============================================
+ninja: no work to do.
+ninja: no work to do.
+No need to regenerate ninja file
+No need to regenerate ninja file
+No need to regenerate ninja file
+Starting ninja...
+[  0% 1/886] build out/target/product/ysl/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible_log
+FAILED: out/target/product/ysl/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible_log
+/bin/bash -c "(echo -n -e 'Deps: \\n  ' > out/target/product/ysl/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible_log ) && (sed 's/ /\\n  /g' <<< \"out/target/product/ysl/system/etc/vintf/compatibility_matrix.3.xml out/target/product/ysl/system/etc/vintf/compatibility_matrix.4.xml out/target/product/ysl/system/etc/vintf/compatibility_matrix.5.xml out/target/product/ysl/system/etc/vintf/compatibility_matrix.current.xml out/target/product/ysl/system/etc/vintf/compatibility_matrix.device.xml out/target/product/ysl/system/etc/vintf/manifest.xml out/target/product/ysl/system/etc/vintf/manifest/android.frameworks.stats@1.0-service.xml out/target/product/ysl/system/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml out/target/product/ysl/system/etc/vintf/manifest/android.system.suspend@1.0-service.xml out/target/product/ysl/system/etc/vintf/manifest/manifest_android.frameworks.cameraservice.service@2.1.xml out/target/product/ysl/system/etc/vintf/manifest/manifest_media_c2_software.xml out/target/product/ysl/system/system_ext/etc/vintf/manifest.xml out/target/product/ysl/vendor/etc/vintf/compatibility_matrix.xml out/target/product/ysl/vendor/etc/vintf/manifest.xml out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.power.stats@1.0-service-mock.xml out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml out/target/product/ysl/vendor/etc/vintf/manifest/manifest.xml out/target/product/ysl/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml\" >> out/target/product/ysl/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible_log ) && (echo -n -e 'Args: \\n  ' >> out/target/product/ysl/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible_log ) && (cat <<< \" --dirmap /system:out/target/product/ysl/system --dirmap /vendor:out/target/product/ysl/vendor --dirmap /odm:out/target/product/ysl/vendor/odm --dirmap /product:out/target/product/ysl/system/product --dirmap /system_ext:out/target/product/ysl/system/system_ext  --property ro.product.first_api_level=27\" >> out/target/product/ysl/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible_log ) && (echo \"For ODM SKU = EMPTY_ODM_SKU_PLACEHOLDER, vendor SKU = EMPTY_VENDOR_SKU_PLACEHOLDER\" >> out/target/product/ysl/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible_log; ( out/host/linux-x86/bin/checkvintf --check-compat  --dirmap /system:out/target/product/ysl/system --dirmap /vendor:out/target/product/ysl/vendor --dirmap /odm:out/target/product/ysl/vendor/odm --dirmap /product:out/target/product/ysl/system/product --dirmap /system_ext:out/target/product/ysl/system/system_ext  --property ro.product.first_api_level=27 --property ro.boot.product.hardware.sku= --property ro.boot.product.vendor.sku= >> out/target/product/ysl/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible_log 2>&1 ) || (cat out/target/product/ysl/obj/PACKAGING/check_vintf_all_intermediates/check_vintf_compatible_log && exit 1) )"
+Deps: 
+  out/target/product/ysl/system/etc/vintf/compatibility_matrix.3.xml
+  out/target/product/ysl/system/etc/vintf/compatibility_matrix.4.xml
+  out/target/product/ysl/system/etc/vintf/compatibility_matrix.5.xml
+  out/target/product/ysl/system/etc/vintf/compatibility_matrix.current.xml
+  out/target/product/ysl/system/etc/vintf/compatibility_matrix.device.xml
+  out/target/product/ysl/system/etc/vintf/manifest.xml
+  out/target/product/ysl/system/etc/vintf/manifest/android.frameworks.stats@1.0-service.xml
+  out/target/product/ysl/system/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml
+  out/target/product/ysl/system/etc/vintf/manifest/android.system.suspend@1.0-service.xml
+  out/target/product/ysl/system/etc/vintf/manifest/manifest_android.frameworks.cameraservice.service@2.1.xml
+  out/target/product/ysl/system/etc/vintf/manifest/manifest_media_c2_software.xml
+  out/target/product/ysl/system/system_ext/etc/vintf/manifest.xml
+  out/target/product/ysl/vendor/etc/vintf/compatibility_matrix.xml
+  out/target/product/ysl/vendor/etc/vintf/manifest.xml
+  out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml
+  out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
+  out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.power.stats@1.0-service-mock.xml
+  out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
+  out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
+  out/target/product/ysl/vendor/etc/vintf/manifest/manifest.xml
+  out/target/product/ysl/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
+Args: 
+   --dirmap /system:out/target/product/ysl/system --dirmap /vendor:out/target/product/ysl/vendor --dirmap /odm:out/target/product/ysl/vendor/odm --dirmap /product:out/target/product/ysl/system/product --dirmap /system_ext:out/target/product/ysl/system/system_ext  --property ro.product.first_api_level=27
+For ODM SKU = EMPTY_ODM_SKU_PLACEHOLDER, vendor SKU = EMPTY_VENDOR_SKU_PLACEHOLDER
+checkvintf I 04-23 07:11:38    25    25 VintfObject.cpp:58] getFrameworkHalManifest: Reading VINTF information.
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/etc/vintf/manifest/': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/manifest/android.frameworks.stats@1.0-service.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/manifest/android.system.suspend@1.0-service.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/manifest/manifest_android.frameworks.cameraservice.service@2.1.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/manifest/manifest_media_c2_software.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/product/etc/vintf/manifest.xml': NAME_NOT_FOUND
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/product/etc/vintf/manifest/': NAME_NOT_FOUND
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/system_ext/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/system_ext/etc/vintf/manifest/': NAME_NOT_FOUND
+checkvintf I 04-23 07:11:38    25    25 VintfObject.cpp:58] getDeviceHalManifest: Reading VINTF information.
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:79] Sysprop ro.boot.product.vendor.sku=
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/vendor/etc/vintf/manifest/': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.power.stats@1.0-service-mock.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/etc/vintf/manifest/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml': OK
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:79] Sysprop ro.boot.product.hardware.sku=
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/odm/etc/vintf/manifest.xml': NAME_NOT_FOUND
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/odm/etc/manifest.xml': NAME_NOT_FOUND
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/vendor/odm/etc/vintf/manifest/': NAME_NOT_FOUND
+checkvintf I 04-23 07:11:38    25    25 VintfObject.cpp:64] getDeviceHalManifest: Successfully processed VINTF information
+checkvintf I 04-23 07:11:38    25    25 VintfObject.cpp:64] getFrameworkHalManifest: Successfully processed VINTF information
+checkvintf I 04-23 07:11:38    25    25 VintfObject.cpp:58] getFrameworkCompatibilityMatrix: Reading VINTF information.
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/etc/vintf/': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.device.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.3.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.4.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.5.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.current.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/system_ext/etc/vintf/': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/system_ext/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/product/etc/vintf/': NAME_NOT_FOUND
+checkvintf I 04-23 07:11:38    25    25 VintfObject.cpp:64] getFrameworkCompatibilityMatrix: Successfully processed VINTF information
+checkvintf I 04-23 07:11:38    25    25 VintfObject.cpp:58] getDeviceCompatibilityMatrix: Reading VINTF information.
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/vendor/etc/vintf/compatibility_matrix.xml': OK
+checkvintf I 04-23 07:11:38    25    25 VintfObject.cpp:64] getDeviceCompatibilityMatrix: Successfully processed VINTF information
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/etc/vintf/': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.device.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.3.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.4.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.5.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.current.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/system_ext/etc/vintf/': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/system_ext/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/product/etc/vintf/': NAME_NOT_FOUND
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/etc/vintf/': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.device.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.3.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.4.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.5.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.current.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/system_ext/etc/vintf/': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/system_ext/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/product/etc/vintf/': NAME_NOT_FOUND
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:475] Skip checking unused HALs.
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/etc/vintf/': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.device.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.3.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.4.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.5.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/etc/vintf/compatibility_matrix.current.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/system_ext/etc/vintf/': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:43] Fetch 'out/target/product/ysl/system/system_ext/etc/vintf/manifest.xml': OK
+checkvintf I 04-23 07:11:38    25    25 HostFileSystem.cpp:54] List 'out/target/product/ysl/system/product/etc/vintf/': NAME_NOT_FOUND
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:389] The following HALs in device manifest are not declared in FCM <= level 2: 
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.audio.effect@6.0::IEffectsFactory/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.audio@6.0::IDevicesFactory/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.biometrics.fingerprint@2.1::IBiometricsFingerprint/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.bluetooth.audio@2.0::IBluetoothAudioProvidersFactory/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.bluetooth@1.0::IBluetoothHci/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.camera.provider@2.4::ICameraProvider/legacy/0
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.cas@1.2::IMediaCasService/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.configstore@1.1::ISurfaceFlingerConfigs/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.drm@1.0::ICryptoFactory/clearkey
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.drm@1.0::ICryptoFactory/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.drm@1.0::ICryptoFactory/widevine
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.drm@1.0::IDrmFactory/clearkey
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.drm@1.0::IDrmFactory/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.drm@1.0::IDrmFactory/widevine
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.drm@1.2::ICryptoFactory/widevine
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.drm@1.2::IDrmFactory/widevine
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.drm@1.3::ICryptoFactory/clearkey
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.drm@1.3::IDrmFactory/clearkey
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.gatekeeper@1.0::IGatekeeper/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.gnss@1.0::IGnss/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.gnss@1.0::IGnss/gnss_vendor
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.graphics.allocator@2.0::IAllocator/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.graphics.composer@2.1::IComposer/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.graphics.mapper@2.1::IMapper/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.graphics.mapper@3.0::IMapper/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.graphics.mapper@4.0::IMapper/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.health@2.1::IHealth/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.ir@1.0::IConsumerIr/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.keymaster@3.0::IKeymasterDevice/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.light@2.0::ILight/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.media.omx@1.0::IOmx/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.media.omx@1.0::IOmxStore/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.memtrack@1.0::IMemtrack/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.power.stats@1.0::IPowerStats/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.radio.config@1.1::IRadioConfig/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.radio@1.2::ISap/slot1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.radio@1.2::ISap/slot2
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.radio@1.4::IRadio/slot1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.radio@1.4::IRadio/slot2
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.sensors@1.0::ISensors/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.soundtrigger@2.2::ISoundTriggerHw/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.tetheroffload.config@1.0::IOffloadConfig/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.tetheroffload.control@1.0::IOffloadControl/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.usb@1.0::IUsb/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.vibrator@1.0::IVibrator/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.wifi.hostapd@1.2::IHostapd/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.wifi.supplicant@1.3::ISupplicant/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   android.hardware.wifi@1.4::IWifi/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.fingerprints.extension@1.0::IFingerprintAuthenticator/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.fingerprints.extension@1.0::IFingerprintCalibration/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.fingerprints.extension@1.0::IFingerprintEngineering/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.fingerprints.extension@1.0::IFingerprintNavigation/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.fingerprints.extension@1.0::IFingerprintRecalibration/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.fingerprints.extension@1.0::IFingerprintSenseTouch/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.fingerprints.extension@1.0::IFingerprintSensorTest/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.qualcomm.qti.dpm.api@1.0::IdpmQmi/dpmQmiService
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.qualcomm.qti.imscmservice@2.2::IImsCmService/qti.ims.connectionmanagerservice
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.qualcomm.qti.uceservice@2.2::IUceService/com.qualcomm.qti.uceservice
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.qualcomm.qti.wifidisplayhal@1.0::IDSManager/wifidisplaydshal
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   com.qualcomm.qti.wifidisplayhal@1.0::IHDCPSession/wifidisplayhdcphal
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.display.color@1.0::IDisplayColor/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.display.config@2.0::IDisplayConfig/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.display.postproc@1.0::IDisplayPostproc/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.goodix.hardware.fingerprint@1.0::IGoodixBiometricsFingerprint/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.lineage.livedisplay@2.0::IPictureAdjustment/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.data.factory@2.2::IFactory/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.esepowermanager@1.1::IEsePowerManager/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.gnss@1.0::ILocHidlGnss/gnss_vendor
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.alarm@1.0::IAlarm/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.bluetooth_audio@2.0::IBluetoothAudioProvidersFactory/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.bluetooth_sar@1.1::IBluetoothSar/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.bt_channel_avoidance@1.0::IBTChannelAvoidance/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.btconfigstore@1.0::IBTConfigStore/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.cryptfshw@1.0::ICryptfsHw/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.data.connection@1.1::IDataConnection/slot1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.data.connection@1.1::IDataConnection/slot2
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.data.iwlan@1.0::IIWlan/slot1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.data.iwlan@1.0::IIWlan/slot2
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.perf@2.2::IPerf/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.am@1.0::IQcRilAudio/slot1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.am@1.0::IQcRilAudio/slot2
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.atcmdfwd@1.0::IAtCmdFwd/AtCmdFwdService
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.ims@1.6::IImsRadio/imsradio0
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.ims@1.6::IImsRadio/imsradio1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.lpa@1.1::IUimLpa/UimLpa0
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.qcrilhook@1.0::IQtiOemHook/oemhook0
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.qcrilhook@1.0::IQtiOemHook/oemhook1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.qtiradio@2.4::IQtiRadio/slot1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.qtiradio@2.4::IQtiRadio/slot2
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.uim@1.2::IUim/Uim0
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.uim@1.2::IUim/Uim1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.uim_remote_client@1.0::IUimRemoteServiceClient/uimRemoteClient0
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.uim_remote_client@1.0::IUimRemoteServiceClient/uimRemoteClient1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.uim_remote_server@1.0::IUimRemoteServiceServer/uimRemoteServer0
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.radio.uim_remote_server@1.0::IUimRemoteServiceServer/uimRemoteServer1
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.hardware.tui_comm@1.0::ITuiComm/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.ims.callinfo@1.0::IService/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.ims.factory@1.0::IImsFactory/default
+checkvintf I 04-23 07:11:38    25    25 check_vintf.cpp:392]   vendor.qti.imsrtpservice@3.0::IRTPService/imsrtpservice
+checkvintf E 04-23 07:11:38    25    25 check_vintf.cpp:618] No such file or directory: Cannot find framework matrix at FCM version 2.: No such file or directory
+[  0% 2/886] build out/target/product/ysl/installed-files-ramdisk-debug.txt
+Installed file list: out/target/product/ysl/installed-files-ramdisk-debug.txt
+[  0% 3/886] Target boot debug image: out/target/product/ysl/boot-debug.img
+[  0% 4/886] Target cache fs image: out/target/product/ysl/cache.img
+ninja: build stopped: subcommand failed.
+07:11:39 ninja failed with: exit status 1
+
+[0;31m#### failed to build some targets (22 seconds) ####[00m
+
