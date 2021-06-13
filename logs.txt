@@ -252,3 +252,5 @@ ninja: build stopped: subcommand failed.
 
 [0;31m#### failed to build some targets (22 seconds) ####[00m
 
+
+https://del.dog/otecokigri
